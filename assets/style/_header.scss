@@ -1,0 +1,176 @@
+@import "mixin";
+header {
+  width: 100%;
+  .personal-info {
+    max-width: 1046px;
+
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 33px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    &--left {
+      figure {
+        img {
+          width: 280px;
+          height: 210px;
+          border-radius: 15px;
+          object-fit: cover;
+        }
+      }
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      gap: 37px;
+      &--top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        .name-position {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          h2 {
+            @include headerTitelStyle;
+            @include linkColor;
+          }
+          span {
+            @include headerParStyle;
+            @include parColor;
+          }
+        }
+        .contact-link {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .phone,
+          .email {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 18px;
+            span {
+              @include linkColor;
+              font-size: 20px;
+            }
+            a {
+              @include headerParStyle;
+              @include linkColor;
+            }
+          }
+        }
+      }
+      &--bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        p {
+          @include headerParStyle;
+          color: #828282;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1024px){
+  header{
+  .personal-info{
+    align-items: center;
+    flex-wrap: wrap;
+    &--right{
+      &--top{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .contact-link{
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+  }
+  
+}
+@media(max-width:768px){
+  body{
+    padding: 70px 50px 24px 50px;
+  }
+  #first{
+    .first-right{
+      justify-content: center;
+      align-items: center;
+      .experiences{
+       max-width: 415px !important;
+       justify-content: center;
+       align-items: center;
+       &-bottom{
+        .box{
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+       }
+      }
+    }
+  }
+}
+
+@media(max-width: 480px){
+  body{
+    padding: 70px 20px 24px 20px;
+  }
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .personal-info{
+        max-width: 300px;
+        &--left{
+          figure{
+            img{
+              width: 200px;
+              height: 200px;
+            }
+          }
+        }
+        &--right{
+          &--bottom{
+            p{
+              font-size: 14px ;
+            }
+          }
+        }
+      }
+      .name-position{
+        h2{
+          font-size: 18px !important;
+        }
+        span{
+          font-size: 14px !important;
+        }
+      }
+      .contact-link{
+        span{
+          font-size: 14px !important;
+        }
+        a{
+          font-size: 10px !important;
+        }
+      }
+    }
+}
+@media(max-width: 320px){
+  .personal-info{
+    width: 250px ;
+  }
+}

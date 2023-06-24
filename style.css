@@ -1,0 +1,140 @@
+@import url(assets/style/_all.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#projects {
+  margin: 0 auto;
+}
+#projects div:nth-child(1) {
+  background-color: #fff;
+  max-width: 1045px;
+  height: 115px;
+  border-radius: 12px;
+  padding: 15px;
+}
+#projects div:nth-child(1) .frameworks button {
+  margin-right: 10px;
+  background: none;
+  border-radius: 12px;
+  border: 1px solid #4f4f4f;
+  width: 85px;
+  height: 35px;
+  margin-top: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#projects div:nth-child(1) .frameworks button:hover {
+  background-color: #2f80ed;
+  border: none;
+  color: #fff;
+  transform: scale(1.05);
+}
+#projects div:nth-child(1) .frameworks button:hover a {
+  color: #fff;
+}
+#projects div:nth-child(1) .frameworks button a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+#carts {
+  margin-top: 35px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#carts .cart {
+  width: 330px;
+  height: 560px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18px;
+}
+#carts .cart img {
+  width: 100%;
+  border-radius: 12px;
+}
+#carts .cart .tag {
+  margin-top: 25px;
+}
+#carts .cart .tag span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  margin: 0px 10px;
+}
+#carts .title {
+  margin: 20px 0;
+}
+#carts .title h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+footer {
+  margin-top: 24px;
+}
+footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+@media (max-width: 1024px) {
+  footer #carts {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  footer #carts {
+    justify-content: center;
+    align-items: center;
+  }
+  footer #carts .cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer button {
+    width: 50px !important;
+    font-size: 9px;
+  }
+  footer button a {
+    font-size: 10px !important;
+  }
+}
+footer .btns {
+  justify-content: center;
+  align-items: center;
+}
+footer .btns .code {
+  width: 80px !important;
+  height: 30px !important;
+}
+footer .btns .code a {
+  font-size: 14px !important;
+}
+
+@media (max-width: 320px) {
+  #projects div:nth-child(1) {
+    width: 250px !important;
+  }
+  #carts .cart {
+    width: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
